@@ -178,7 +178,7 @@ conda install numpy pyyaml mkl mkl-include setuptools cmake cffi typing
 ```
 #### Get the PyTorch source
 ```bash
-git clone --recursive https://github.com/pytorch/pytorch
+git clone --recursive https://github.com/HYU-GradProj/pytorch
 cd pytorch
 ```
 
@@ -186,11 +186,13 @@ cd pytorch
 On Linux
 ```bash
 python setup.py install
+python setup.py build develop # for develop purpose
 ```
 
 On macOS
 ```bash
 MACOSX_DEPLOYMENT_TARGET=10.9 CC=clang CXX=clang++ python setup.py install
+MACOSX_DEPLOYMENT_TARGET=10.9 CC=clang CXX=clang++ python setup.py build develop # for develop purpose
 ```
 
 On Windows
